@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-12-04T09:59:51.618-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/todo/templates/page-todo"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="boohoo"
+        sling:resourceType="todo/components/structure/page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <todo
+                jcr:created="{Date}2016-12-01T23:45:31.622-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-12-01T23:45:31.622-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="todo/components/content/todo">
+                <jcr:content
+                    jcr:primaryType="cq:PageContent"
+                    completed="{Boolean}true">
+                    <cmp
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Todo List"
+                        sling:resourceType="todo/components/content/todo/cmp"
+                        itemResourceType="todo/components/content/todo/cmp/item"
+                        labelClearCompleted="Clear completed ({0})"
+                        labelCountActive="&lt;strong>{0}&lt;/strong> item left"
+                        labelCountActivePlural="&lt;strong>{0}&lt;/strong> items left"
+                        labelNewItem="What needs to be done?"
+                        labelSelectActive="Active"
+                        labelSelectAll="All"
+                        labelSelectCompleted="Completed"
+                        labelToggleAll="Mark all as complete">
+                        <test2
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="test2"
+                            sling:resourceType="todo/components/content/todo/cmp/item"
+                            completed="{Boolean}true"/>
+                        <helping
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="helping"
+                            sling:resourceType="todo/components/content/todo/cmp/item"
+                            completed="{Boolean}true"/>
+                    </cmp>
+                </jcr:content>
+            </todo>
+        </par>
+    </jcr:content>
+</jcr:root>

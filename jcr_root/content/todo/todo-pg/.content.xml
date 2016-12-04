@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-12-01T14:40:13.064-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/todo/templates/page-todo"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="todo-pg"
+        sling:resourceType="todo/components/structure/page"
+        labelClearCompleted="Clear completed ({0})"
+        labelCountActive="&lt;strong>{0}&lt;/strong> item left"
+        labelCountActivePlural="&lt;strong>{0}&lt;/strong> items left"
+        labelNewItem="What needs to be done?"
+        labelSelectActive="Active"
+        labelSelectAll="All"
+        labelSelectCompleted="Completed"
+        labelToggleAll="Mark all as complete">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <todo
+                jcr:created="{Date}2016-11-29T22:53:34.828-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-11-29T22:53:34.828-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Todo"
+                sling:resourceType="todo/components/content/todo"
+                itemResourceType="todo/components/content/todo/item"
+                labelClearCompleted="Clear completed ({0})"
+                labelCountActive="&lt;strong>{0}&lt;/strong> item left"
+                labelCountActivePlural="&lt;strong>{0}&lt;/strong> items left"
+                labelNewItem="What needs to be done?"
+                labelSelectActive="Active"
+                labelSelectAll="All"
+                labelSelectCompleted="Completed"
+                labelToggleAll="Mark all as complete">
+                <get_default_properti
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Get default properties written into component."
+                    sling:resourceType="todo/components/content/todo/item"
+                    completed="{Boolean}true"/>
+                <add_dialog_for_prope
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Add dialog for properties."
+                    sling:resourceType="todo/components/content/todo/item"
+                    completed="{Boolean}true"/>
+                <fix_placeholder_
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Fix placeholder."
+                    sling:resourceType="todo/components/content/todo/item"/>
+                <get_dependencies_out
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Get dependencies out of page."
+                    sling:resourceType="todo/components/content/todo/item"/>
+                <check_handling_of_un
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Check handling of unique instances.  Modify?"
+                    sling:resourceType="todo/components/content/todo/item"/>
+                <put_on_git_hub_
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Put on Git Hub."
+                    sling:resourceType="todo/components/content/todo/item"/>
+                <install_and_test_on_
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Install and test on another instance."
+                    sling:resourceType="todo/components/content/todo/item"/>
+                <merge_page_strategie
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Merge page strategies from We.train, todo, and TrainingProject"
+                    sling:resourceType="todo/components/content/todo/item"/>
+            </todo>
+        </par>
+    </jcr:content>
+</jcr:root>

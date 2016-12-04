@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-12-01T14:46:39.279-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/todo/templates/page-todo"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="instanz"
+        sling:resourceType="todo/components/structure/page">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <todo
+                jcr:created="{Date}2016-12-01T14:45:44.283-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-12-01T14:45:44.283-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Todo List"
+                sling:resourceType="todo/components/content/todo"
+                itemResourceType="todo/components/content/todo/item"
+                labelClearCompleted="Clear completed ({0})"
+                labelCountActive="&lt;strong>{0}&lt;/strong> item left"
+                labelCountActivePlural="&lt;strong>{0}&lt;/strong> items left"
+                labelNewItem="What needs to be done?"
+                labelSelectActive="Active"
+                labelSelectAll="All"
+                labelSelectCompleted="Completed"
+                labelToggleAll="Mark all as complete">
+                <help
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Help"
+                    sling:resourceType="todo/components/content/todo/item"
+                    completed="{Boolean}true"/>
+                <me
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Me"
+                    sling:resourceType="todo/components/content/todo/item"
+                    completed="{Boolean}true"/>
+            </todo>
+        </par>
+    </jcr:content>
+</jcr:root>
